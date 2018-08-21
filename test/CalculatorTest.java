@@ -3,17 +3,17 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+public class CalculatorTest {
 
     @Test
     @DisplayName("Testing addition")
-    void testCalculateAdd() {
-        int a = 1;
-        int b = 1;
-        char o = '+';
+    public void testCalculateAdd() {
+        int firstOperand = 1;
+        int secondOperand = 1;
+        char operator = '+';
         int expected = 2;
 
-        int result = Calculator.calculate(a, b, o);
+        int result = Calculator.calculate(firstOperand, secondOperand, operator);
         assertEquals(expected, result);
     }
 
